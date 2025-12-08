@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+
+.top {
+    height: 20%;
+    background-color: #ff5fa2;
+    border-bottom: 10px solid white;
+}
+
+.middle {
+    height: 60%;
+    display: flex;
+    border-bottom: 10px solid white;
+}
+
+.left {
+    width: 70%;
+    background-color: #ff0080;
+    border-right: 10px solid white;
+}
+
+.right {
+  width: 30%;
+  background: #c4005c;
+}
+
+.bottom {
+  height: 20%;
+  background: #7b2a4d;
+}
