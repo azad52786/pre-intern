@@ -21,7 +21,7 @@ body {
 
 .hero-section {
 	display: flow-root;
-	padding-block: 1rem;
+	padding-block: 1.5rem;
 	padding-inline: 3rem;
 }
 
