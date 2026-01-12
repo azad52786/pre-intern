@@ -62,7 +62,7 @@ body {
 	margin-right: 7px;
 }
 
-.card:nth-child(3) {
+.card:last-child {
 	margin-right: 0;
 }
 
