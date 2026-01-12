@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.primary-content {
+	width: 95%;
+	margin: 2.5rem auto;
+	background: #e00000;
+	color: white;
+}
+
+.hero-section {
+	display: flow-root;
+	padding-block: 1rem;
+	padding-inline: 3rem;
+}
+
+.hero-text {
+	padding-left: 4rem;
+	padding-top: 6rem;
+	font-family: "Raleway", sans-serif;
+}
+
+.hero-logo {
+	float: right;
+	margin-inline: 8rem;
+}
+
+.hero-heading {
+	font-size: 50px;
+	margin-bottom: 2rem;
+	font-weight: 200;
+}
+
+.hero-paragraph {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.cards-section {
+	font-size: 0;
+}
+
+.card {
+	background-color: #571212;
+	padding: 50px 40px;
+	display: inline-block;
+	height: 300px;
+	vertical-align: bottom;
+	overflow: auto;
+	max-width: 33%;
+	font-size: 16px;
+	margin-right: 7px;
+}
+
+.card:nth-child(3) {
+	margin-right: 0;
+}
+
+.card-paragraph {
+	color: #8b3c3c;
+	font-size: medium;
+	margin-top: 3rem;
+}

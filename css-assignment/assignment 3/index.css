@@ -22,7 +22,7 @@ main {
 }
 
 .hero {
-	height: 50%;
+	min-height: 50%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
