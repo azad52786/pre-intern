@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+.navbar {
+	display: flow-root;
+	padding: 10px 120px;
+	background: #ddd;
+}
+
+.navbar__logo {
+	float: left;
+}
+
+.navbar__menu {
+	float: right;
+	padding-block: 1.8rem;
+}
+
+.navbar__link {
+	margin-right: 2rem;
+	text-decoration: none;
+	color: #195a92;
+	font-weight: 400;
+	font-size: large;
+	cursor: pointer;
+}
+
+.navbar__link--active {
+	background: #000;
+	padding: 15px 15px;
+	color: #fff;
+}
+
+.banner {
+	padding-inline: 120px;
+	padding-block: 120px;
+	background: #059ec1;
+	color: white;
+	text-align: center;
+	display: flow-root;
+	font-weight: bold;
+}
+
+.banner__title {
+	font-size: 50px;
+}
+
+.banner__arrow {
+	font-size: 50px;
+	color: #000;
+	cursor: pointer;
+}
+
+.banner__arrow--left {
+	float: left;
+}
+
+.banner__arrow--right {
+	float: right;
+}
+
+.layout {
+	margin: 10px 120px;
+}
+
+.layout__left {
+	background: #ffe777;
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	min-height: 500px;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.layout__small-box {
+	width: 50%;
+	height: 70%;
+	background: #d8a7e8;
+	position: absolute;
+	top: 5%;
+	left: -10%;
+}
+
+.layout__right {
+	width: 58%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.form {
+	background: #e8891b;
+	padding: 25px;
+	margin-bottom: 10px;
+	min-height: 300px;
+}
+
+.form__input,
+.form__select {
+	width: 70%;
+	padding: 15px;
+	border: white;
+	outline: none;
+	background: #f9b05a;
+	color: white;
+	margin-bottom: 1rem;
+	display: block;
+	border: 1px solid white;
+}
+
+.form__button {
+	padding: 15px 40px;
+	background: #f9b05a;
+	cursor: pointer;
+	font-size: larger;
+	margin-top: 5px;
+	color: white;
+	border: 1px solid white;
+}
+
+.layout__right__highlight-box {
+	min-height: 190px;
+	background: #8ee936;
+}
+
+.footer {
+	background: #007999;
+	text-align: center;
+	padding: 40px 20px;
+	color: #fff;
+	font-size: medium;
+}
+
+.footer__link {
+	color: #fff;
+	padding: 0 10px;
+	border-right: 1px solid white;
+	text-decoration: none;
+}
+
+.footer__link:last-child {
+	border: none;
+}
