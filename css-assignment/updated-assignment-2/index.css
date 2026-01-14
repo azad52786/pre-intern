@@ -6,20 +6,22 @@
 
 body {
 	background-color: #fff;
-	text-align: center;
 	font-size: 20px;
 	font-family: "Arial", sans-serif;
-	color: white;
 }
 
 .container {
-	width: 95%;
-	margin: 3rem auto;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 40px auto;
+	color: white;
+	text-align: center;
 }
 
 .header,
 .footer {
-	padding-block: 2rem;
+	padding-block: 32px;
 }
 
 .header {
@@ -39,9 +41,9 @@ body {
 .sidebar {
 	width: calc(25% - 10px);
 	background: #a7c76b;
-	padding: 1rem;
+	padding: 16px;
 	float: left;
-	min-height: 28rem;
+	min-height: 450px;
 	margin-right: 10px;
 }
 
@@ -51,14 +53,44 @@ body {
 }
 
 .main-content {
-	min-height: 20rem;
-	padding: 1rem;
+	min-height: 328px;
+	padding: 16px;
 	background-color: #f7cc3b;
-	margin-bottom: 1rem;
+	margin-bottom: 10px;
 }
 
 .extra-content {
-	min-height: 7rem;
-	padding: 1rem;
+	min-height: 112px;
+	padding: 16px;
 	background-color: #9a9a9a;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
 }
