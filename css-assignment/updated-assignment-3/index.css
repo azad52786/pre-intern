@@ -12,38 +12,71 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+.container {
+	width: 100%;
+	margin: 40px auto;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
 .primary-content {
-	width: 95%;
-	margin: 2.5rem auto;
 	background: #e00000;
 	color: white;
 }
 
 .hero-section {
 	display: flow-root;
-	padding-inline: 3rem;
+	margin-inline: 112px;
 }
 
 .hero-text {
-	padding-left: 4rem;
-	padding-block: 6rem;
+	padding-block: 96px;
 	font-family: "Raleway", sans-serif;
 }
 
 .hero-logo {
 	float: right;
-	margin-inline: 8rem;
 }
 
 .hero-heading {
-	font-size: 50px;
-	margin-bottom: 2rem;
+	font-size: 3rem;
 	font-weight: 200;
+	margin-bottom: 32px;
 }
 
 .hero-paragraph {
+	width: min(90%, 600px);
 	font-size: 20px;
 	font-weight: 200;
+	line-height: 28px;
 }
 
 .cards-section {
@@ -52,14 +85,17 @@ body {
 
 .card {
 	background-color: #571212;
+	font-family: "Roboto", sans-serif;
 	padding: 50px 40px;
 	display: inline-block;
 	height: 300px;
 	vertical-align: bottom;
-	overflow: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	max-width: 33%;
 	font-size: 16px;
-	margin-right: 7px;
+	line-height: 20px;
+	margin-right: 0.5%;
 }
 
 .card:last-child {
@@ -69,5 +105,5 @@ body {
 .card-paragraph {
 	color: #8b3c3c;
 	font-size: medium;
-	margin-top: 3rem;
+	margin-top: 48px;
 }
