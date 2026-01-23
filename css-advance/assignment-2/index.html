@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Advance assignment - 2</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<header class="navbar">
+			<nav class="container navbar__wrapper">
+				<a href="#" aria-label="Go to home page" title="Corey Home" rel="home">
+					<img
+						src="./images/head_logo.jpg"
+						alt="nav-logo"
+						width="166"
+						height="70"
+						loading="lazy"
+					/>
+				</a>
+				<div class="navbar__right__wrapper">
+					<ul class="navbar__manu">
+						<li class="navbar__item">
+							<a href="" class="navbar__link">Home</a>
+						</li>
+						<li class="navbar__item">
+							<a href="" class="navbar__link">About</a>
+						</li>
+						<li class="navbar__item">
+							<a href="" class="navbar__link">Services</a>
+						</li>
+						<li class="navbar__item">
+							<a href="" class="navbar__link">Portfolio</a>
+						</li>
+						<li class="navbar__item">
+							<a href="" class="navbar__link">Price</a>
+						</li>
+						<li class="navbar__item">
+							<a href="" class="navbar__link">Blog</a>
+						</li>
+					</ul>
+					<a
+						href="mailto:support@corey.com"
+						aria-label="Email Corey"
+						title="Send us an email"
+						class="contact__email"
+					>
+						<img
+							src="./images/mail.jpg"
+							alt="mail"
+							loading="lazy"
+							width="46"
+							height="46"
+						/>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Hero section  -->
+			<section id="hero__section" class="section">
+				<div class="container hero__content">
+					<h1 class="hero__heading">
+						<span class="poppins-thin">We Will</span> Make
+						<span class="poppins-thin">Your </span>Business
+						<span class="break poppins-thin">Great Again</span>
+					</h1>
+
+					<p>
+						Consectetur adipisicing elit. Impedit repudiandae nisi
+						<span class="break">maiores dolore dolor.</span>
+					</p>
+
+					<div class="hero__buttons">
+						<a
+							href="#"
+							class="btn"
+							role="button"
+							aria-label="Contact us page"
+							title="Contact us"
+							>CONTACT US</a
+						>
+						<a
+							href="#"
+							class="btn"
+							role="button"
+							aria-label="Discover more about our services"
+							title="Discover now"
+							>DISCOVER NOW</a
+						>
+					</div>
+				</div>
+				<a
+					href="#about-section"
+					title="Go to about"
+					class="scroll-indicator hero__scroll-indicator"
+					aria-level="Go to about"
+				>
+					<img
+						src="./images/icons/darrow.png"
+						alt="down-arrow"
+						width="20"
+						height="10"
+					/>
+				</a>
+			</section>
+
+			<!-- About section  -->
+			<section id="about-section" class="section">
+				<div class="container section__wrapper about-section__wrapper">
+					<!-- Left content -->
+					<aside class="about-section__content">
+						<h2 class="about-section__title section__title no-break">
+							<span class="poppins-thin">Hello</span> World
+						</h2>
+
+						<p class="about-section__description">
+							Eeligendi autem consequatur cupiditate deleniti officiis aliquid
+							repellat provident ut rerum excepturi, ex iure veritatis. Deleniti
+							numquam quis voluptate tempora. Aliquam voluptatibus placeat,
+							maiores!
+						</p>
+
+						<ul class="about-section__features" role="list">
+							<li class="about-section__feature-item">
+								<img
+									src="./images/icons/i-diamond_b.svg"
+									alt="diamond-icon"
+									width="40"
+									height="40"
+									aria-hidden="true"
+									class="about-section__icon"
+								/>
+								<span>Exploring your area of activity</span>
+							</li>
+
+							<li class="about-section__feature-item">
+								<img
+									src="./images/icons/i-wallet_b.svg"
+									alt="wallet-black-icon"
+									width="40"
+									height="40"
+									aria-hidden="true"
+									class="about-section__icon"
+								/>
+								<span>Competitive analysis</span>
+							</li>
+
+							<li class="about-section__feature-item">
+								<img
+									src="./images/icons/i-trophy_b.svg"
+									alt="trophy-icon-black"
+									width="40"
+									height="40"
+									aria-hidden="true"
+									class="about-section__icon"
+								/>
+								<span>Do the work in time</span>
+							</li>
+						</ul>
+					</aside>
+
+					<!-- Right image  -->
+					<div class="about-section__media">
+						<img
+							src="./images/img-3.jpg"
+							class="about-section__image"
+							alt="Modern office workspace"
+							loading="lazy"
+							width="500"
+							height="400"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Service Section  -->
+
+			<section id="service-section" class="section">
+				<div class="container section__wrapper service-section__wrapper">
+					<h2 class="section__title service-section__title">
+						<span class="poppins-thin">Some of our </span> best services
+						<span class="poppins-thin break">to solve your problems</span>
+					</h2>
+
+					<div class="service-section__cards">
+						<article class="service-card">
+							<div class="service-image">
+								<img
+									src="./images/icons/i-message_w.svg"
+									alt="message-icon"
+									width="40"
+									height="40"
+									loading="lazy"
+									class="service-card__icon"
+								/>
+							</div>
+							<h4 class="service-card__title">Digital Marketing</h4>
+							<p class="service-card__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+								cupiditate pariatur natus, laboriosam!
+							</p>
+						</article>
+						<article class="service-card">
+							<div class="service-image">
+								<img
+									src="./images/icons/i-feature_w.svg"
+									alt="feature-icon"
+									width="40"
+									height="40"
+									loading="lazy"
+									class="service-card__icon"
+								/>
+							</div>
+							<h4 class="service-card__title poppins-semibold">
+								Web Development
+							</h4>
+							<p class="service-card__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+								cupiditate pariatur natus, laboriosam!
+							</p>
+						</article>
+						<article class="service-card">
+							<div class="service-image">
+								<img
+									src="./images/icons/i-sketch_w.svg"
+									alt="sketch-icon"
+									width="40"
+									height="40"
+									loading="lazy"
+									class="service-card__icon"
+								/>
+							</div>
+							<h4 class="service-card__title">UI/UX Design</h4>
+							<p class="service-card__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+								cupiditate pariatur natus, laboriosam!
+							</p>
+						</article>
+					</div>
+
+					<button
+						class="service-order__button btn"
+						type="button"
+						aria-label="Order a service"
+					>
+						order a service
+					</button>
+				</div>
+			</section>
+
+			<!-- Portfolio section -->
+
+			<section id="portfolio-section" class="section">
+				<div class="container portfolio-section__wrapper section__wrapper">
+					<h2 class="section__title portfolio-section__title">
+						Good design <span class="poppins-thin">is obvious</span>
+						<span class="poppins-thin break">Great design is transparent</span>
+					</h2>
+					<p class="portfolio-section__subtitle">
+						<span class="poppins-bold portfolio-section__subtitle--noraml"
+							>About Ritam ©</span
+						>
+						Graphic designer, digital literacy teacher
+					</p>
+					<ul class="portfolio-list">
+						<li class="portfolio-list__item portfolio-list__item--active">
+							show all
+						</li>
+						<li class="portfolio-list__item">design</li>
+						<li class="portfolio-list__item">code</li>
+						<li class="portfolio-list__item">art</li>
+					</ul>
+					<div class="portfolio-grid">
+						<div class="portfolio-grid-item-1 portfolio-grid-item">
+							<img src="./images/12-min.jpg" alt="img-1" loading="lazy" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+						<div class="portfolio-grid-item-2 portfolio-grid-item">
+							<img src="./images/2-min.jpg" alt="img-2" loading="lazy" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+						<div class="portfolio-grid-item-3 portfolio-grid-item">
+							<img src="./images/2-min.jpg" alt="img-3" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+						<div class="portfolio-grid-item-4 portfolio-grid-item">
+							<img src="./images/2-min.jpg" alt="img-4" loading="lazy" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+						<div class="portfolio-grid-item-5 portfolio-grid-item">
+							<img src="./images/12-min.jpg" alt="img-5" loading="lazy" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+						<div class="portfolio-grid-item-6 portfolio-grid-item">
+							<img src="./images/2-min.jpg" alt="img-6" loading="lazy" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+						<div class="portfolio-grid-item-7 portfolio-grid-item">
+							<img src="./images/2-min.jpg" alt="img-7" loading="lazy" />
+							<div class="project-overley">
+								<h1 class="overley-icon">+</h1>
+								<h1 class="overley-title">Project Title</h1>
+								<p>Code</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
