@@ -155,7 +155,8 @@ a {
 }
 
 #hero__section::after,
-#service-section::after {
+#service-section::after,
+#status-section::after {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -310,7 +311,8 @@ a {
 	}
 }
 
-.service-card {
+.service-card,
+.status-card {
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
@@ -319,7 +321,9 @@ a {
 	color: #cecdd6;
 }
 
-.service-image {
+.service-image,
+.status-image {
+	display: flex;
 	padding: 20px;
 	width: fit-content;
 	aspect-ratio: 1/1;
@@ -451,10 +455,33 @@ a {
 	}
 }
 
+#status-section {
+	background: url(./images/img-4.jpg) center / cover no-repeat;
+	color: #fff;
+}
+
+.status-section__cards {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 20px;
+}
+
+.status-card {
+	gap: 10px;
+}
+
+.status-card:hover {
+	color: #ba9219;
+	transition: color 0.3s linear;
+}
+
 /* Small devices (≥576px) */
 @media (min-width: 576px) {
 	.container {
 		max-width: 540px;
+	}
+	.status-section__cards {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -463,12 +490,19 @@ a {
 	.container {
 		max-width: 720px;
 	}
+	.status-section__cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) {
 	.container {
 		max-width: 960px;
+	}
+
+	.status-section__cards {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
