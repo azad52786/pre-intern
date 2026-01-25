@@ -140,11 +140,6 @@ a {
 .section {
 	position: relative;
 	/* min-height: 100vh; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
 }
 
 #hero__section {
@@ -152,6 +147,10 @@ a {
 	background: url(./images/img-1.jpg) center / cover no-repeat;
 	color: #fff;
 	padding-block: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #hero__section::after,
