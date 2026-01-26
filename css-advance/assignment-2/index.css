@@ -90,6 +90,10 @@ img {
 	justify-content: space-between;
 }
 
+.navbar__manu {
+	display: none;
+}
+
 .navbar__wrapper > a > img {
 	display: block;
 	/* vertical-align: middle; */
@@ -766,6 +770,9 @@ a {
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) {
+	.navbar__manu {
+		display: block;
+	}
 	.container {
 		max-width: 960px;
 	}
