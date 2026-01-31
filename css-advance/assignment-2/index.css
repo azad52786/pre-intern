@@ -159,6 +159,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	gap: 20px;
 }
 
 #hero__section::after,
@@ -729,7 +730,7 @@ a {
 }
 
 .blog-card {
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
