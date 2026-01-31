@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LINE+Seed+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
 	margin: 0;
@@ -90,7 +90,7 @@ img {
 	justify-content: space-between;
 }
 
-.navbar__manu {
+.navbar__menu {
 	display: none;
 }
 
@@ -122,6 +122,9 @@ a {
 	margin-right: 0;
 }
 
+.navbar__link img {
+	margin-left: 5px;
+}
 .navbar__link {
 	height: 100%;
 	display: flex;
@@ -182,11 +185,13 @@ a {
 }
 
 .hero__heading {
-	font-size: 3rem;
+	font-size: 4rem;
+	max-width: 800px;
 }
 
-.break {
-	display: block;
+.hero__subheading {
+	max-width: 400px;
+	line-height: 1.5;
 }
 
 .hero__buttons {
@@ -197,7 +202,7 @@ a {
 }
 
 .btn {
-	padding: 12px 26px;
+	padding: 14px 36px;
 	border-radius: 25px;
 	font-size: 0.75rem;
 	text-decoration: none;
@@ -216,27 +221,23 @@ a {
 }
 
 .btn:hover {
-	background: #f2b705;
-	color: #000;
+	background: #d2a10d;
+	border: 1px solid #d2a10d;
 	transition: all 0.3s linear;
 }
 
 .scroll-indicator {
 	width: fit-content;
-	padding: 25px;
+	padding: 10px;
 	border-radius: 50%;
 }
 
 .hero__scroll-indicator {
-	background: rgba(17, 21, 52, 0.2);
+	/* background: rgba(17, 21, 52, 0.2); */
 	position: relative;
 	z-index: 20;
 }
 
-.hero__scroll-indicator:hover {
-	background-color: rgba(17, 21, 52, 0.3);
-	transition: background-color 0.4s linear;
-}
 
 .section__wrapper {
 	display: flex;
@@ -252,8 +253,9 @@ a {
 }
 
 .section__title {
-	font-size: 2.5rem;
-	line-height: 45px;
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 1.2;
 }
 
 .about-section__title {
@@ -266,7 +268,7 @@ a {
 }
 
 .about-section__description {
-	color: #6b7280;
+	color: #b1b3b6;
 	line-height: 1.7;
 	margin-bottom: 20px;
 }
@@ -280,7 +282,7 @@ a {
 	align-items: center;
 	gap: 15px;
 	margin-bottom: 20px;
-	color: #282d36;
+	color: #434953;
 }
 
 .about-section__media {
@@ -303,6 +305,7 @@ a {
 .service-section__wrapper {
 	text-align: center;
 	flex-direction: column;
+	align-items: center;
 }
 
 .service-section__cards,
@@ -354,6 +357,8 @@ a {
 
 .service-card__title {
 	margin-top: 20px;
+	font-family: "LINE Seed JP", sans-serif;
+    font-weight: 600;
 	margin-bottom: 10px;
 }
 
@@ -380,8 +385,9 @@ a {
 }
 
 .portfolio-section__subtitle {
-	color: #626971c8;
-	margin-bottom: 50px;
+	color: #a3a5a8c8;
+    margin-bottom: 50px;
+    font-style: italic;
 }
 
 .portfolio-section__subtitle--noraml {
@@ -392,18 +398,27 @@ a {
 	display: flex;
 	gap: 10px;
 	margin-bottom: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 1.2;
 }
 
 .portfolio-list__item {
 	min-width: 70px;
-	padding: 20px 10px;
+	padding: 25px 10px;
 	cursor: pointer;
 	text-transform: uppercase;
 	text-align: center;
+	letter-spacing: 2px;
+}
+
+.portfolio-list__item--active {
+	background-color: #f3f2f7c2;
 }
 
 .portfolio-list__item:hover {
-	background-color: #eeecf5;
+	background-color: #f3f2f7c2;
 	transition: background-color 0.5s linear;
 }
 
@@ -423,19 +438,18 @@ a {
 
 .portfolio-grid-item {
 	position: relative;
-	padding: 5px;
 }
 
 .portfolio-grid-item .project-overley {
 	position: absolute;
-	inset: 3%;
+	inset: 15px;
 	background-color: rgba(17, 21, 52, 0.85);
 	opacity: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 10px;
+	gap: 20px;
 	color: #eeecf5;
 	cursor: pointer;
 }
@@ -447,6 +461,21 @@ a {
 	border-radius: 50%;
 	background-color: #f2b705;
 	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.overley-title {
+	font-family: "LINE Seed JP", sans-serif;
+	font-size: 0.95rem;
+	font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.project-overley p {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #888ca6;
+
 }
 
 .portfolio-grid-item .project-overley:hover {
@@ -501,6 +530,11 @@ a {
 	vertical-align: middle;
 }
 
+.status-card h3 {
+	font-size: 2rem;
+}
+
+
 .pricing-section__wrapper {
 	flex-direction: column;
 	align-items: center;
@@ -511,29 +545,38 @@ a {
 }
 
 .description-color {
-	color: #626971c8;
+	color: #a0a0a0c8;
+	font-weight: 300;
+}
+
+.pricing-section__cards {
+	gap: 40px;
 }
 
 .pricing-card {
-	padding: 20px;
+	padding: 40px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
 	text-align: center;
-	border: 1px solid #cecdd6;
-	border-radius: 10px;
+	border-radius: 5px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	background-color: #ffffff;
 }
 
 .pricing-card__title {
+	font-family: "LINE Seed JP", sans-serif;
+	font-weight: 600;
 	color: #415064;
+	margin-bottom: 10px;
 }
 
 .pricing-card__subtitle {
-	color: #626971c8;
-	font-size: 0.9rem;
-	line-height: 1.3rem;
+	color: #989da3c8;
+	font-size: 0.95rem;
+	line-height: 1.4;
 	margin-bottom: 30px;
 }
 
@@ -543,13 +586,15 @@ a {
 }
 
 .pricing-card__price span {
+	font-family: "LINE Seed JP", sans-serif;
 	font-size: 2rem;
+	font-weight: 700;
 }
 
 .pricing-card__features {
 	font-size: 0.9rem;
 	line-height: 1.3rem;
-	color: #444a51c8;
+	color: #7d858ec8;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -557,7 +602,7 @@ a {
 }
 
 .not-eligible-feature {
-	color: #b3b9c0b9;
+	color: #d6dbe2b9;
 }
 
 #testimonial-section {
@@ -574,6 +619,8 @@ a {
 }
 
 .testimonial-section__title {
+	font-size: 3rem;
+    line-height: 1.2;
 	color: #dbdae0;
 	flex: 1;
 }
@@ -587,16 +634,22 @@ a {
 	vertical-align: middle;
 }
 
+.slider {
+	display: flex;
+}
+
 .slider-larrow {
-	background-color: #111534;
+	background-color: #4a5188;
 	padding: 20px;
 	cursor: pointer;
+	border: none;
 }
 
 .slider-rarrow {
-	background-color: #ba9219;
+	background-color: #caa639;
 	padding: 20px;
 	cursor: pointer;
+	border: none;
 }
 
 .testimonial-section__description,
@@ -617,7 +670,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
+	gap: 20px;
 	text-align: center;
 }
 
@@ -627,11 +680,13 @@ a {
 }
 
 .testimonial-card__name {
+	font-family: "LINE Seed JP", sans-serif;
 	color: #d1cfde;
 }
 
 .testimonial-card__title {
-	color: #b4b1c2;
+	font-size: .8rem;
+	color: #e6e4ed;
 }
 
 .blog-section__wrapper {
@@ -639,16 +694,23 @@ a {
 	gap: 40px;
 }
 
+.testimonial-card p {
+	font-weight: 300;
+}
+
 .blog-section__title,
 .blog-card__title {
 	color: #415064;
 }
 
+.blog-card__title {
+	font-family: "LINE Seed JP", sans-serif;
+}
+
 .blog-section__description,
 .blog-card__description {
-	color: #626971c8;
-	font-size: 0.9rem;
-	line-height: 1.25rem;
+	color: #8192a5c8;
+	font-weight: 300;
 }
 
 .blog-card__description {
@@ -679,8 +741,7 @@ a {
 }
 
 .blog-card__title {
-	font-size: 1.2rem;
-	line-height: 1.75rem;
+	font-size: 1rem;
 }
 
 .blog-card__btn {
@@ -770,7 +831,7 @@ a {
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) {
-	.navbar__manu {
+	.navbar__menu {
 		display: block;
 	}
 	.container {
