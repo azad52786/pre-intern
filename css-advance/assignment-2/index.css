@@ -223,7 +223,7 @@ a {
 
 .btn:hover {
 	background: #d2a10d;
-	border: 1px solid #d2a10d;
+	border-color: #d2a10d;
 	transition: all 0.3s linear;
 }
 
@@ -760,7 +760,7 @@ a {
 
 .footer-navigation-list,
 .content-subscriber {
-	margin: 70px 0;
+	margin: 20px 0;
 }
 
 .footer-navigation-heading {
@@ -812,6 +812,10 @@ a {
 	.footer-main-content {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.footer-navigation-list,
+	.content-subscriber {
+		margin: 30px 0;
+	}
 }
 
 /* Medium devices (≥768px) */
@@ -822,6 +826,11 @@ a {
 	.status-section__cards,
 	.footer-main-content {
 		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.footer-navigation-list,
+	.content-subscriber {
+		margin: 70px 0;
 	}
 
 	.testimonial-cards {
@@ -842,6 +851,11 @@ a {
 	.status-section__cards,
 	.footer-main-content {
 		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	.footer-navigation-list,
+	.content-subscriber {
+		margin: 70px 0;
 	}
 }
 
