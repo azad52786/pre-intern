@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=LINE+Seed+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=LINE+Seed+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
 	margin: 0;
@@ -148,7 +148,6 @@ a {
 	align-items: center;
 }
 
-
 #hero__section {
 	min-height: calc(100vh - 70px);
 	background: url(./images/img-1.jpg) center / cover no-repeat;
@@ -239,7 +238,6 @@ a {
 	z-index: 20;
 }
 
-
 .section__wrapper {
 	display: flex;
 	gap: 40px;
@@ -254,9 +252,9 @@ a {
 }
 
 .section__title {
-    font-size: 3rem;
-    max-width: 600px;
-    line-height: 1.2;
+	font-size: 3rem;
+	max-width: 600px;
+	line-height: 1.2;
 }
 
 .about-section__title {
@@ -359,7 +357,7 @@ a {
 .service-card__title {
 	margin-top: 20px;
 	font-family: "LINE Seed JP", sans-serif;
-    font-weight: 600;
+	font-weight: 600;
 	margin-bottom: 10px;
 }
 
@@ -387,8 +385,8 @@ a {
 
 .portfolio-section__subtitle {
 	color: #a3a5a8c8;
-    margin-bottom: 50px;
-    font-style: italic;
+	margin-bottom: 50px;
+	font-style: italic;
 }
 
 .portfolio-section__subtitle--noraml {
@@ -469,14 +467,13 @@ a {
 	font-family: "LINE Seed JP", sans-serif;
 	font-size: 0.95rem;
 	font-weight: 400;
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .project-overley p {
 	font-size: 0.9rem;
 	font-weight: 300;
 	color: #888ca6;
-
 }
 
 .portfolio-grid-item .project-overley:hover {
@@ -534,7 +531,6 @@ a {
 .status-card h3 {
 	font-size: 2rem;
 }
-
 
 .pricing-section__wrapper {
 	flex-direction: column;
@@ -621,7 +617,7 @@ a {
 
 .testimonial-section__title {
 	font-size: 3rem;
-    line-height: 1.2;
+	line-height: 1.2;
 	color: #dbdae0;
 	flex: 1;
 }
@@ -686,7 +682,7 @@ a {
 }
 
 .testimonial-card__title {
-	font-size: .8rem;
+	font-size: 0.8rem;
 	color: #e6e4ed;
 }
 
@@ -827,7 +823,7 @@ a {
 	.footer-main-content {
 		grid-template-columns: repeat(3, 1fr);
 	}
-	
+
 	.footer-navigation-list,
 	.content-subscriber {
 		margin: 70px 0;
@@ -852,7 +848,7 @@ a {
 	.footer-main-content {
 		grid-template-columns: repeat(4, 1fr);
 	}
-	
+
 	.footer-navigation-list,
 	.content-subscriber {
 		margin: 70px 0;
