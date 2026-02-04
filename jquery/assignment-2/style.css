@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.hello-world-box {
+	padding: 50px;
+	background-color: #dfedff;
+	display: none;
+	text-align: center;
+}
+
+.flip {
+	background-color: #e5eecc;
+	text-align: center;
+	padding: 20px 0;
+	cursor: pointer;
+}
