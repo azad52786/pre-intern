@@ -355,6 +355,36 @@ a {
 	background: #929ace26;
 }
 
+.service-image::before,
+.status-image::before {
+	content: "";
+	display: block;
+	height: 40px;
+}
+
+.service-image-1::before {
+	background: url(./images/icons/i-message_w.svg) center / cover no-repeat;
+}
+.service-image-2::before {
+	background: url(./images/icons/i-feature_w.svg) center / cover no-repeat;
+}
+.service-image-3::before {
+	background: url(./images/icons/i-sketch_w.svg) center / cover no-repeat;
+}
+
+.status-image-1::before {
+	background: url(./images/icons/i-team.svg) center / cover no-repeat;
+}
+.status-image-2::before {
+	background: url(./images/icons/i-shield.svg) center / cover no-repeat;
+}
+.status-image-3::before {
+	background: url(./images/icons/i-diamond.svg) center / cover no-repeat;
+}
+.status-image-4::before {
+	background: url(./images/icons/i-trophy.svg) center / cover no-repeat;
+}
+
 .service-card__title {
 	margin-top: 20px;
 	font-family: "LINE Seed JP", sans-serif;
