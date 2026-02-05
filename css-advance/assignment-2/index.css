@@ -629,7 +629,7 @@ a {
 	gap: 5px;
 	text-align: center;
 	border-radius: 5px;
-	box-shadow: 0 4px 12px #00000026;
+	box-shadow: 0 4px 12px #8f898926;
 	background-color: #ffffff;
 }
 
@@ -776,7 +776,7 @@ a {
 
 .blog-section__description,
 .blog-card__description {
-	color: #8192a5c8;
+	color: #667483c8;
 	font-weight: 300;
 }
 
