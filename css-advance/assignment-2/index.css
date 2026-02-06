@@ -592,7 +592,8 @@ a {
 
 .status-section__cards {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 20px;
 }
 
@@ -894,7 +895,6 @@ a {
 	.container {
 		max-width: 540px;
 	}
-	.status-section__cards,
 	.footer-main-content {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -909,7 +909,6 @@ a {
 	.container {
 		max-width: 720px;
 	}
-	.status-section__cards,
 	.footer-main-content {
 		grid-template-columns: repeat(3, 1fr);
 	}
