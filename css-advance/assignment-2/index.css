@@ -279,7 +279,6 @@ a {
 .about-section__title {
 	margin-bottom: 20px;
 	color: #415064;
-	min-width: min(100%, 400px);
 }
 
 .about-section__description {
@@ -290,6 +289,7 @@ a {
 
 .about-section__content {
 	flex: 1;
+	min-width: 360px;
 }
 
 .about-section__feature-item {
@@ -321,6 +321,16 @@ a {
 
 .about-section__media {
 	flex: 1;
+}
+
+
+@media (min-width: 992px) {
+	.about-section__media {
+		flex: 60%;
+	}
+	.about-section__content {
+		flex: 38%;
+	}
 }
 
 .about-section__image {
@@ -729,9 +739,10 @@ a {
 
 .testimonial-slider__wrapper {
 	display: flex;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	gap: 20px;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .testimonial-section__title {
@@ -756,6 +767,13 @@ a {
 
 .slider {
 	display: flex;
+}
+
+@media (max-width: 768px) {
+	.slider {
+		width: 100%;
+		justify-content: space-between;
+	}
 }
 
 .slider-larrow {
