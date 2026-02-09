@@ -119,6 +119,14 @@ a {
 	vertical-align: middle;
 }
 
+.navbar__item--downarrow a::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: url(./images/icons/darrow.svg) center / cover no-repeat;
+	margin-left: 5px;
+}
+
 .navbar__list:last-child {
 	margin-right: 0;
 }
