@@ -292,6 +292,25 @@ a {
 	color: #434953;
 }
 
+.about-section__feature-item::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+}
+
+.about-feature-1::before {
+	background: url(./images/icons/i-diamond_b.svg) center / cover no-repeat;
+	
+}
+
+.about-feature-2::before {
+	background: url(./images/icons/i-wallet-d.svg) center / cover no-repeat;
+}
+
+.about-feature-3::before {
+	background: url(./images/icons/i-trophy-d.svg) center / cover no-repeat;
+}
+
 .about-section__media {
 	flex: 1;
 }
