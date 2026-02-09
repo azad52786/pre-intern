@@ -19,6 +19,14 @@ img {
 	vertical-align: middle;
 }
 
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 .roboto-thin {
 	font-family: "Roboto", sans-serif;
 	font-weight: 100;
@@ -98,14 +106,6 @@ img {
 	display: block;
 	/* vertical-align: middle; */
 	align-self: center;
-}
-
-li {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
 }
 
 .navbar__right__wrapper {
