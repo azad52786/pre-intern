@@ -323,16 +323,6 @@ a {
 	flex: 1;
 }
 
-
-@media (min-width: 992px) {
-	.about-section__media {
-		flex: 60%;
-	}
-	.about-section__content {
-		flex: 38%;
-	}
-}
-
 .about-section__image {
 	width: 100%;
 	min-width: min(500px, calc(100vw - 40px));
@@ -997,6 +987,13 @@ a {
 	.footer-navigation-list,
 	.content-subscriber {
 		margin: 70px 0;
+	}
+
+	.about-section__media {
+		flex: 60%;
+	}
+	.about-section__content {
+		flex: 38%;
 	}
 }
 
