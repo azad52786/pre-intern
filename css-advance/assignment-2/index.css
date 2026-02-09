@@ -382,6 +382,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	color: #cecdd6;
+	gap: 10px;
 }
 
 .service-image,
@@ -629,6 +630,10 @@ a {
 	gap: 10px;
 }
 
+.status-image {
+	margin-bottom: 20px;
+}
+
 .status-card:hover {
 	color: #d8c201;
 	transition: color 0.3s linear;
@@ -754,14 +759,14 @@ a {
 }
 
 .slider-larrow {
-	background-color: #4a5188;
+	background-color: #3a376c;
 	padding: 20px;
 	cursor: pointer;
 	border: none;
 }
 
 .slider-rarrow {
-	background-color: #caa639;
+	background-color: #d0a806;
 	padding: 20px;
 	cursor: pointer;
 	border: none;
