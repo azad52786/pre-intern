@@ -476,7 +476,7 @@ a {
 
 .portfolio-list__item {
 	min-width: 70px;
-	padding: 25px 10px;
+	padding: 25px 20px;
 	cursor: pointer;
 	text-transform: uppercase;
 	text-align: center;
@@ -630,7 +630,7 @@ a {
 }
 
 .status-card:hover {
-	color: #ba9219;
+	color: #d8c201;
 	transition: color 0.3s linear;
 }
 
