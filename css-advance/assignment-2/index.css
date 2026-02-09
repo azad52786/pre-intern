@@ -216,8 +216,8 @@ a {
 }
 
 .btn {
-	padding: 14px 36px;
-	border-radius: 25px;
+	padding: 20px 36px;
+	border-radius: 30px;
 	font-size: 0.75rem;
 	text-decoration: none;
 	letter-spacing: 1px;
@@ -235,8 +235,8 @@ a {
 }
 
 .btn:hover {
-	background: #d2a10d;
-	border-color: #d2a10d;
+	background: #d0a806;
+	border-color: #d0a806;
 	transition: all 0.3s linear;
 }
 
@@ -386,7 +386,7 @@ a {
 
 .service-image,
 .status-image {
-	padding: 20px;
+	padding: 30px;
 	width: fit-content;
 	aspect-ratio: 1/1;
 	border-radius: 50%;
@@ -397,7 +397,7 @@ a {
 .status-image::before {
 	content: "";
 	display: block;
-	height: 40px;
+	height: 60px;
 }
 
 .service-image-1::before {
@@ -428,11 +428,12 @@ a {
 	font-family: "LINE Seed JP", sans-serif;
 	font-weight: 600;
 	margin-bottom: 10px;
+	font-size: 1.1rem;
 }
 
 .service-card__description {
-	font-size: 0.8rem;
-	line-height: 20px;
+	font-size: 1rem;
+	line-height: 1.4;
 }
 
 .service-order__button {
