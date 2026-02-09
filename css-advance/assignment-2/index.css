@@ -271,7 +271,7 @@ a {
 .about-section__title {
 	margin-bottom: 20px;
 	color: #415064;
-	min-width: min(400px, 100%);
+	min-width: 400px;
 }
 
 .about-section__description {
