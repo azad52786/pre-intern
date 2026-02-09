@@ -638,7 +638,11 @@ a {
 }
 
 .status-card h3 {
-	font-size: 2rem;
+	font-size: 3rem;
+}
+
+.status-card p {
+	font-size: 1.2rem;
 }
 
 .pricing-section__wrapper {
