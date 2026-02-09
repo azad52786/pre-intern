@@ -870,7 +870,8 @@ a {
 }
 
 .footer-navigation-item {
-	margin-bottom: 5px;
+	margin-bottom: 9px;
+    letter-spacing: 2px;
 }
 
 .footer-navigation-item a {
