@@ -127,10 +127,6 @@ a {
 	margin-left: 5px;
 }
 
-.navbar__list:last-child {
-	margin-right: 0;
-}
-
 .navbar__link img {
 	margin-left: 5px;
 }
