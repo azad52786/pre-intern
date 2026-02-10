@@ -212,7 +212,7 @@ a {
 }
 
 .btn {
-	padding: 20px 36px;
+	padding: 15px 36px;
 	border-radius: 30px;
 	font-size: 0.75rem;
 	text-decoration: none;
@@ -230,10 +230,11 @@ a {
 	border: 1px solid #282d36;
 }
 
-.btn:hover {
+.btn:hover, .btn--active {
 	background: #d0a806;
 	border-color: #d0a806;
 	transition: all 0.3s linear;
+	color: white;
 }
 
 .scroll-indicator {
@@ -300,6 +301,7 @@ a {
 	content: "";
 	width: 40px;
 	height: 40px;
+	filter: brightness(0);
 }
 
 .about-feature-1::before {
@@ -552,16 +554,15 @@ a {
 	transition: opacity 0.4s linear;
 }
 
-.portfolio-grid-item .overley-icon {
-	width: fit-content;
-	text-align: center;
-	aspect-ratio: 1/1;
-	border-radius: 50%;
-	background-color: #f2b705;
-	padding: 5px;
-	margin-bottom: 10px;
+.portfolio-content::before {
+	    content: "+";
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: #f2b705;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    text-align: center;
 }
-
 .overley-title {
 	font-family: "LINE Seed JP", sans-serif;
 	font-size: 0.95rem;
@@ -632,6 +633,11 @@ a {
 
 .status-card:hover {
 	color: #d8c201;
+	/* filter:  brightness(0)
+    invert(1)
+    sepia(1)
+    saturate(6000%)
+    hue-rotate(40deg); */
 	transition: color 0.3s linear;
 }
 
@@ -760,6 +766,9 @@ a {
 		width: 100%;
 		justify-content: space-between;
 	}
+	.about-section__image {
+		height: auto;
+	}
 }
 
 .slider-larrow {
@@ -876,6 +885,11 @@ a {
 	background-color: #3a376c;
 }
 
+.footer-logo {
+	height: fit-content;
+	display: inline-block;
+}
+
 .footer-main-content {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -894,6 +908,11 @@ a {
 .footer-navigation-item {
 	margin-bottom: 9px;
     letter-spacing: 2px;
+}
+
+.footer-navigation-item a:hover {
+	color: #c4c2cd;
+	transition: color 0.3s linear;
 }
 
 .footer-navigation-item a {
