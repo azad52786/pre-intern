@@ -853,7 +853,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	padding: 20px;
+	padding: 30px 20px;
 }
 
 .blog-card {
