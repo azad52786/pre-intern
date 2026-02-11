@@ -214,7 +214,7 @@ a {
 	color: #9a9da7;
 }
 
-#hero__section {
+#hero-section {
 	min-height: 100vh;
 	background: url(./images/img-1.jpg) center / cover no-repeat;
 	color: #fff;
@@ -228,7 +228,7 @@ a {
 	padding-top: 70px;
 }
 
-#hero__section::after,
+#hero-section::after,
 #service-section::after,
 #status-section::after,
 #testimonial-section::after {
