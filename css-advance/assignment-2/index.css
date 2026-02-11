@@ -97,6 +97,7 @@ a {
 	right: 0;
 	left: 0;
 	z-index: 1000;
+	box-shadow: 0 0 10px #ddd;
 }
 
 .navbar__wrapper {
@@ -1047,6 +1048,11 @@ a {
 	.navbar__toggler, .navbar__collapse {
 		display: none !important;
 	}
+
+	.navbar {
+		box-shadow: none;
+	}
+
 	.navbar__menu {
 		display: block;
 	}
