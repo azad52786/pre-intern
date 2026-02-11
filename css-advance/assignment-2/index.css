@@ -696,7 +696,8 @@ a {
 
 .status-card:hover {
 	color: #d8c201;
-	transition: all 0.3s linear;
+	filter: brightness(0) saturate(100%) invert(80%) sepia(60%) saturate(4463%) hue-rotate(17deg) brightness(107%) contrast(99%);
+	/* transition: all 0.3s linear; */
 }
 
 .status-image img {
