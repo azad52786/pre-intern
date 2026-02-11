@@ -618,10 +618,10 @@ a {
 }
 
 .portfolio-content::before {
-	    content: "+";
+	content: "+";
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    background-color: #f2b705;
+    background-color: #d0a904;
     margin-bottom: 10px;
     font-size: 2.5rem;
     text-align: center;
