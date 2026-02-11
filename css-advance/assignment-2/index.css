@@ -1052,6 +1052,11 @@ a {
 
 	.navbar {
 		box-shadow: none;
+		position: static;
+	}
+
+	#hero-section {
+		min-height: calc(100vh - 70px);
 	}
 
 	.navbar__menu {
