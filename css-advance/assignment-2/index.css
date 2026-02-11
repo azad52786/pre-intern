@@ -118,7 +118,7 @@ a {
 
 .navbar__right__wrapper {
 	display: flex;
-	gap: 40px;
+	gap: 20px;
 	justify-content: center;
 	align-items: center;
 }
@@ -349,7 +349,6 @@ a {
 
 .about-section__content {
 	flex: 1;
-	min-width: 360px;
 }
 
 .about-section__feature-item {
@@ -1042,10 +1041,17 @@ a {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 	}
+
+	.about-section__content {
+		min-width: 360px;
+	}
 }
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) {
+	.navbar__right__wrapper  {
+		gap: 40px;
+	}
 	.navbar__toggler, .navbar__collapse {
 		display: none !important;
 	}
@@ -1073,13 +1079,6 @@ a {
 	.footer-navigation-list,
 	.content-subscriber {
 		margin: 70px 0;
-	}
-
-	.about-section__media {
-		flex: 60%;
-	}
-	.about-section__content {
-		flex: 38%;
 	}
 }
 
