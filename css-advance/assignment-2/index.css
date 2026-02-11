@@ -91,6 +91,12 @@ a {
 
 .navbar {
 	background-color: #fbfaff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
 }
 
 .navbar__wrapper {
@@ -100,6 +106,7 @@ a {
 
 .navbar__menu {
 	display: none;
+	height: 100%;
 }
 
 .navbar__wrapper > a > img {
@@ -111,6 +118,8 @@ a {
 .navbar__right__wrapper {
 	display: flex;
 	gap: 40px;
+	justify-content: center;
+	align-items: center;
 }
 
 .navbar__item {
@@ -153,8 +162,60 @@ a {
 	align-items: center;
 }
 
+.navbar__toggler {
+	all: unset;
+    padding-inline: 15px;
+    border: 0.5px solid #83858c8f;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-block: 5px;
+}
+
+
+.navbar__toggler::before {
+	content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+	background-image: url('./images/menu.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.navbar__toggler.active::before {
+	background-image: url('./images/close.png');	
+}
+
+.navbar__collapse {
+	display: none;
+	padding-block: 10px;
+}
+
+.navbar__mobile__item {
+	margin-block: 10px;
+}
+
+.navbar__mobile__link {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #4f5362;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-height: 40px;
+}
+
+.navbar__mobile__link:hover {
+	color: #9a9da7;
+}
+
 #hero__section {
-	min-height: calc(100vh - 70px);
+	min-height: 100vh;
 	background: url(./images/img-1.jpg) center / cover no-repeat;
 	color: #fff;
 	padding-block: 40px;
@@ -164,6 +225,7 @@ a {
 	justify-content: center;
 	position: relative;
 	gap: 20px;
+	padding-top: 70px;
 }
 
 #hero__section::after,
@@ -633,12 +695,7 @@ a {
 
 .status-card:hover {
 	color: #d8c201;
-	/* filter:  brightness(0)
-    invert(1)
-    sepia(1)
-    saturate(6000%)
-    hue-rotate(40deg); */
-	transition: color 0.3s linear;
+	transition: all 0.3s linear;
 }
 
 .status-image img {
@@ -987,6 +1044,9 @@ a {
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) {
+	.navbar__toggler, .navbar__collapse {
+		display: none !important;
+	}
 	.navbar__menu {
 		display: block;
 	}

@@ -6,40 +6,67 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>CSS Advance assignment - 2</title>
 	<link rel="stylesheet" href="index.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<header class="navbar">
-		<nav class="container navbar__wrapper">
-			<a href="#" aria-label="Go to home page" title="Corey Home" rel="home">
-				<img src="./images/head_logo.jpg" alt="nav-logo" width="166" height="70" />
-			</a>
-			<div class="navbar__right__wrapper">
-				<ul class="navbar__menu">
-					<li class="navbar__item">
-						<a href="#hero-section" title="Home" class="navbar__link">Home</a>
+		<nav class="container">
+			<div class="navbar__wrapper">
+				<a href="#" aria-label="Go to home page" title="Corey Home" rel="home">
+					<img src="./images/head_logo.jpg" alt="nav-logo" width="166" height="70" />
+				</a>
+				<div class="navbar__right__wrapper">
+					<ul class="navbar__menu">
+						<li class="navbar__item">
+							<a href="#hero-section" title="Home" class="navbar__link">Home</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#about-section" title="About" class="navbar__link">About</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#service-section" title="Services" class="navbar__link">Services</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#portfolio-section" title="Portfolio" class="navbar__link">Portfolio</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#pricing-section" title="Pricing" class="navbar__link">Price</a>
+						</li>
+						<li class="navbar__item navbar__item--downarrow">
+							<a href="#blog-section" title="Blogs" class="navbar__link">Blog</a>
+							</a>
+						</li>
+					</ul>
+					<a href="mailto:support@corey.com" aria-label="Email Corey" title="Send us an email"
+						class="contact__email">
+						<img src="./images/mail.jpg" alt="mail" width="46" height="46" />
+					</a>
+					<button class="navbar__toggler" role="button" aria-label="Toggle menu" title="Toggle menu" aria-controls="navbarResponsive" aria-expanded="false"></button>
+				</div>
+			</div>
+			<div class="navbar__collapse" id="navbarResponsive">
+				<ul class="navbar__mobile__menu">
+					<li class="navbar__mobile__item">
+						<a href="#hero-section" title="Home" class="navbar__mobile__link">Home</a>
 					</li>
-					<li class="navbar__item">
-						<a href="#about-section" title="About" class="navbar__link">About</a>
+					<li class="navbar__mobile__item">
+						<a href="#about-section" title="About" class="navbar__mobile__link">About</a>
 					</li>
-					<li class="navbar__item">
-						<a href="#service-section" title="Services" class="navbar__link">Services</a>
+					<li class="navbar__mobile__item">
+						<a href="#service-section" title="Services" class="navbar__mobile__link">Services</a>
 					</li>
-					<li class="navbar__item">
-						<a href="#portfolio-section" title="Portfolio" class="navbar__link">Portfolio</a>
+					<li class="navbar__mobile__item">
+						<a href="#portfolio-section" title="Portfolio" class="navbar__mobile__link">Portfolio</a>
 					</li>
-					<li class="navbar__item">
-						<a href="#pricing-section" title="Pricing" class="navbar__link">Price</a>
+					<li class="navbar__mobile__item">
+						<a href="#pricing-section" title="Pricing" class="navbar__mobile__link">Price</a>
 					</li>
-					<li class="navbar__item navbar__item--downarrow">
-						<a href="#blog-section" title="Blogs" class="navbar__link">Blog</a>
+					<li class="navbar__mobile__item navbar__mobile__item--downarrow">
+						<a href="#blog-section" title="Blogs" class="navbar__mobile__link">Blog</a>
 						</a>
 					</li>
 				</ul>
-				<a href="mailto:support@corey.com" aria-label="Email Corey" title="Send us an email"
-					class="contact__email">
-					<img src="./images/mail.jpg" alt="mail" width="46" height="46" />
-				</a>
 			</div>
 		</nav>
 	</header>
@@ -466,7 +493,7 @@
 	<!-- Footer  -->
 	<footer class="footer">
 		<div class="container">
-			<a href="#" class="footer-logo"><img src="./images/logo-footer.jpg" alt="Corey Logo" title="footer-logo" loading="lazy" width="166"
+			<a href="#" class="footer-logo"><img src="./images/logo-footer.jpg" alt="Corey Logo" title="Corey Logo" loading="lazy" width="166"
 				height="70" /></a>
 
 			<div class="footer-main-content">
@@ -547,6 +574,7 @@
 			</p>
 		</div>
 	</footer>
+	<script src="index.js"></script>
 </body>
 
 </html>
