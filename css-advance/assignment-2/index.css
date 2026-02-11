@@ -1061,7 +1061,6 @@ a {
 		max-width: 960px;
 	}
 
-	.status-section__cards,
 	.footer-main-content {
 		grid-template-columns: repeat(4, 1fr);
 	}
