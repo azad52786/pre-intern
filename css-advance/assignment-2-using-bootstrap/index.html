@@ -1,69 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>CSS Advance assignment - 2</title>
-	<link rel="stylesheet" href="index.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-	<header class="navbar">
+	<header class="fixed-top start-0 end-0 shadow-sm">
 		<nav class="container">
-			<div class="navbar__wrapper">
-				<a href="#" aria-label="Go to home page" title="Corey Home" rel="home">
-					<img src="./images/head_logo.jpg" alt="nav-logo" width="166" height="70" />
-				</a>
-				<div class="navbar__right__wrapper">
-					<ul class="navbar__menu">
-						<li class="navbar__item">
-							<a href="#hero-section" title="Home" class="navbar__link">Home</a>
+			<div class="row justify-content-between">
+				<div class="col-3">
+					<a href="#" aria-label="Go to home page" title="Corey Home" rel="home">
+						<img src="./images/head_logo.jpg" alt="nav-logo" width="166" height="70" />
+					</a>
+				</div>
+				<div class="col-9 d-flex justify-content-end align-items-center navbar__right__wrapper">
+					<ul class="d-none d-lg-block h-100">
+						<li class="d-inline-block h-100 align-middle">
+							<a href="#hero-section" title="Home"
+								class="h-100 d-flex align-items-center px-3 fw-bold text-uppercase navbar__link">Home</a>
 						</li>
-						<li class="navbar__item">
-							<a href="#about-section" title="About" class="navbar__link">About</a>
+						<li class="d-inline-block h-100 align-middle">
+							<a href="#about-section" title="About"
+								class="h-100 d-flex align-items-center px-3 fw-bold text-uppercase navbar__link">About</a>
 						</li>
-						<li class="navbar__item">
-							<a href="#service-section" title="Services" class="navbar__link">Services</a>
+						<li class="d-inline-block h-100 align-middle">
+							<a href="#service-section" title="Services"
+								class="h-100 d-flex align-items-center px-3 fw-bold text-uppercase navbar__link">Services</a>
 						</li>
-						<li class="navbar__item">
-							<a href="#portfolio-section" title="Portfolio" class="navbar__link">Portfolio</a>
+						<li class="d-inline-block h-100 align-middle">
+							<a href="#portfolio-section" title="Portfolio"
+								class="h-100 d-flex align-items-center px-3 fw-bold text-uppercase navbar__link">Portfolio</a>
 						</li>
-						<li class="navbar__item">
-							<a href="#pricing-section" title="Pricing" class="navbar__link">Price</a>
+						<li class="d-inline-block h-100 align-middle">
+							<a href="#pricing-section" title="Pricing"
+								class="h-100 d-flex align-items-center px-3 fw-bold text-uppercase navbar__link">Price</a>
 						</li>
-						<li class="navbar__item navbar__item--downarrow">
-							<a href="#blog-section" title="Blogs" class="navbar__link">Blog</a>
-							</a>
+						<li class="d-inline-block h-100 align-middle navbar__item--downarrow">
+							<a href="#blog-section" title="Blogs"
+								class="h-100 d-flex align-items-center px-3 fw-bold text-uppercase navbar__link">Blog</a>
 						</li>
 					</ul>
 					<a href="mailto:support@corey.com" aria-label="Email Corey" title="Send us an email"
-						class="contact__email">
+						class="d-flex align-items-center">
 						<img src="./images/mail.jpg" alt="mail" width="46" height="46" />
 					</a>
-					<button class="navbar__toggler" role="button" aria-label="Toggle menu" title="Toggle menu" aria-controls="navbarResponsive" aria-expanded="false"></button>
+					<button class="px-3 rounded-3 py-1 navbar__toggler" role="button" aria-label="Toggle menu"
+						title="Toggle menu" aria-controls="navbarResponsive" aria-expanded="false"></button>
 				</div>
 			</div>
 			<div class="navbar__collapse" id="navbarResponsive">
 				<ul class="navbar__mobile__menu">
-					<li class="navbar__mobile__item">
-						<a href="#hero-section" title="Home" class="navbar__mobile__link">Home</a>
+					<li class="mb-3">
+						<a href="#hero-section" title="Home"
+							class=" d-flex align-items-center fw-normal w-100 text-uppercase navbar__mobile__link">Home</a>
 					</li>
-					<li class="navbar__mobile__item">
-						<a href="#about-section" title="About" class="navbar__mobile__link">About</a>
+					<li class="mb-3">
+						<a href="#about-section" title="About"
+							class=" d-flex align-items-center fw-normal w-100 text-uppercase navbar__mobile__link">About</a>
 					</li>
-					<li class="navbar__mobile__item">
-						<a href="#service-section" title="Services" class="navbar__mobile__link">Services</a>
+					<li class="mb-3">
+						<a href="#service-section" title="Services"
+							class=" d-flex align-items-center fw-normal w-100 text-uppercase navbar__mobile__link">Services</a>
 					</li>
-					<li class="navbar__mobile__item">
-						<a href="#portfolio-section" title="Portfolio" class="navbar__mobile__link">Portfolio</a>
+					<li class="mb-3	">
+						<a href="#portfolio-section" title="Portfolio"
+							class=" d-flex align-items-center fw-normal w-100 text-uppercase navbar__mobile__link">Portfolio</a>
 					</li>
-					<li class="navbar__mobile__item">
-						<a href="#pricing-section" title="Pricing" class="navbar__mobile__link">Price</a>
+					<li class="mb-3">
+						<a href="#pricing-section" title="Pricing"
+							class=" d-flex align-items-center fw-normal w-100 text-uppercase navbar__mobile__link">Price</a>
 					</li>
-					<li class="navbar__mobile__item navbar__mobile__item--downarrow">
-						<a href="#blog-section" title="Blogs" class="navbar__mobile__link">Blog</a>
+					<li class="mb-3 navbar__item--downarrow">
+						<a href="#blog-section" title="Blogs"
+							class=" d-flex align-items-center fw-normal w-100 text-uppercase navbar__mobile__link ">Blog</a>
 						</a>
 					</li>
 				</ul>
@@ -72,25 +88,27 @@
 	</header>
 	<main>
 		<!-- Hero section  -->
-		<section id="hero-section">
-			<div class="container hero__content">
+		<section id="hero-section"
+			class="text-white d-flex flex-column align-items-center justify-content-center position-relative pb-5 gap-5">
+			<div
+				class="container hero__content position-relative text-center d-flex align-items-center justify-content-center flex-column gap-4 z-2 flex-grow-1">
 				<h1 class="hero__heading">
-					We Will<span > Make</span>Your 
-					<span>Business </span>Great Again
+					We Will<span class="fw-bold"> Make</span>Your
+					<span class="fw-bold">Business </span>Great Again
 				</h1>
 
-				<p class="hero__subheading roboto-extralight">
+				<p class="hero__subheading">
 					Consectetur adipisicing elit. Impedit repudiandae nisi maiores
 					dolore dolor.
 				</p>
 
-				<div class="hero__buttons">
-					<a href="#" class="btn btn--active" aria-label="Contact us page" title="Contact us">CONTACT US</a>
-					<a href="#" class="btn" aria-label="Discover more about our services"
-						title="Discover now">DISCOVER NOW</a>
+				<div class="d-flex justify-content-center flex-wrap gap-4">
+					<a href="#" class="btn btn--active" aria-label="Contact us page" title="Contact us">contact us</a>
+					<a href="#" class="btn" aria-label="Discover more about our services" title="Discover now">discover
+						now</a>
 				</div>
 			</div>
-			<a href="#about-section" title="Go to about" class="scroll-indicator hero__scroll-indicator"
+			<a href="#about-section" title="Go to about" class="w-auto p-2 rounded-circle position-relative z-3"
 				aria-level="Go to about">
 				<img src="./images/icons/darrow.png" alt="down-arrow" width="20" height="10" />
 			</a>
@@ -98,53 +116,57 @@
 
 		<!-- About section  -->
 		<section id="about-section">
-			<div class="container section__wrapper about-section__wrapper">
-				<!-- Left content -->
-				<aside class="about-section__content">
-					<h2 class="about-section__title section__title">
-						Hello<span> World</span>
-					</h2>
+			<div class="container section__wrapper">
+				<div class="row">
+					<!-- Left content -->
+					<aside class=" col-lg-5">
+						<h2 class="about-section__title section__title">
+							Hello<span> World</span>
+						</h2>
 
-					<p class="about-section__description">
-						Eeligendi autem consequatur cupiditate deleniti officiis aliquid
-						repellat provident ut rerum excepturi, ex iure veritatis. Deleniti
-						numquam quis voluptate tempora. Aliquam voluptatibus placeat,
-						maiores!
-					</p>
+						<p class="about-section__description">
+							Eeligendi autem consequatur cupiditate deleniti officiis aliquid
+							repellat provident ut rerum excepturi, ex iure veritatis. Deleniti
+							numquam quis voluptate tempora. Aliquam voluptatibus placeat,
+							maiores!
+						</p>
 
-					<ul class="about-section__features" role="list">
-						<li class="about-section__feature-item about-feature-1">
-							<span>Exploring your area of activity</span>
-						</li>
+						<ul role="list">
+							<li class="d-flex align-items-center gap-3 about-section__feature-item about-feature-1">
+								<span>Exploring your area of activity</span>
+							</li>
 
-						<li class="about-section__feature-item about-feature-2">
-							<span>Competitive analysis</span>
-						</li>
+							<li class="d-flex align-items-center gap-3 about-section__feature-item about-feature-2">
+								<span>Competitive analysis</span>
+							</li>
 
-						<li class="about-section__feature-item about-feature-3">
-							<span>Do the work in time</span>
-						</li>
-					</ul>
-				</aside>
+							<li class="d-flex align-items-center gap-3 about-section__feature-item about-feature-3">
+								<span>Do the work in time</span>
+							</li>
+						</ul>
+					</aside>
 
-				<!-- Right image  -->
-				<div class="about-section__media">
-					<img src="./images/img-3.jpg" class="about-section__image" alt="Modern office workspace"
-						loading="lazy" width="500" height="400"/>
+					<!-- Right image  -->
+					<div class="col-lg-7">
+						<img src="./images/img-3.jpg" class="w-100 about-section__image" alt="Modern office workspace"
+							loading="lazy" width="500" height="500" />
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Service Section  -->
-		<section id="service-section">
-			<div class="container section__wrapper service-section__wrapper">
-				<h2 class="section__title service-section__title">
+		<section id="service-section" class="text-white position-relative">
+			<div
+				class="container d-flex gap-5 position-relative z-2 text-center flex-column align-items-center section__wrapper">
+				<h2 class="section__title">
 					Some of our <span> best services</span>
-					 to solve your problems
+					to solve your problems
 				</h2>
 
-				<div class="service-section__cards">
-					<div class="service-card">
+				<div class="row">
+					<div
+						class=" col-md-6 col-lg-4 my-3 d-flex flex-column align-items-center justify-content-center service-card">
 						<div class="service-image service-image-1">
 						</div>
 						<h4 class="service-card__title">Digital Marketing</h4>
@@ -153,7 +175,8 @@
 							cupiditate pariatur natus, laboriosam!
 						</p>
 					</div>
-					<div class="service-card">
+					<div
+						class=" col-md-6 col-lg-4 my-3 d-flex flex-column align-items-center justify-content-center service-card">
 						<div class="service-image service-image-2">
 						</div>
 						<h4 class="service-card__title roboto-semibold">
@@ -164,7 +187,8 @@
 							cupiditate pariatur natus, laboriosam!
 						</p>
 					</div>
-					<div class="service-card">
+					<div
+						class=" col-md-6 col-lg-4 my-3 d-flex flex-column align-items-center justify-content-center service-card">
 						<div class="service-image service-image-3">
 						</div>
 						<h4 class="service-card__title">UI/UX Design</h4>
@@ -175,7 +199,8 @@
 					</div>
 				</div>
 
-				<a href="#" target="_blank" class="service-order__button btn btn--active" aria-label="Order a service">
+				<a href="#" target="_blank" class=" w-auto mx-auto cursor-pointer btn btn--active"
+					aria-label="Order a service">
 					order a service
 				</a>
 			</div>
@@ -183,63 +208,71 @@
 
 		<!-- Portfolio section -->
 		<section id="portfolio-section">
-			<div class="container portfolio-section__wrapper section__wrapper">
+			<div
+				class="container d-flex gap-2 position-relative z-2 flex-column section__wrapper portfolio-section__wrapper">
 				<h2 class="section__title portfolio-section__title">
-					 <span>Good designis</span> obvious
+					<span>Good designis</span> obvious
 					Great design is transparent
 				</h2>
-				<p class="portfolio-section__subtitle">
+				<p class="portfolio-section__subtitle fst-italic">
 					<span class="roboto-bold portfolio-section__subtitle--noraml">About Ritam ©</span>
 					Graphic designer, digital literacy teacher
 				</p>
-				<ul class="portfolio-list">
-					<li class="portfolio-list__item portfolio-list__item--active">
+				<ul class="portfolio-list d-flex gap-2 fw-bold overflow-auto">
+					<li class="portfolio-list__item text-uppercase text-center portfolio-list__item--active">
 						show all
 					</li>
-					<li class="portfolio-list__item">design</li>
-					<li class="portfolio-list__item">code</li>
-					<li class="portfolio-list__item">art</li>
+					<li class="portfolio-list__item text-uppercase text-center">design</li>
+					<li class="portfolio-list__item text-uppercase text-center">code</li>
+					<li class="portfolio-list__item text-uppercase text-center">art</li>
 				</ul>
 				<div class="portfolio-grid">
 					<div class="portfolio-grid-item-1 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
 
 					</div>
 					<div class="portfolio-grid-item-2 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
 					</div>
 					<div class="portfolio-grid-item-3 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
 					</div>
 					<div class="portfolio-grid-item-4 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
 					</div>
 					<div class="portfolio-grid-item-5 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
 					</div>
 					<div class="portfolio-grid-item-6 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
 					</div>
 					<div class="portfolio-grid-item-7 portfolio-grid-item">
-						<div class="portfolio-content">
+						<div
+							class="portfolio-content h-100 d-flex flex-column align-items-center justify-content-center gap-3 position-relative opacity-0">
 							<h2 class="overley-title">Project Title</h2>
 							<p>Code</p>
 						</div>
@@ -251,100 +284,117 @@
 
 		<!-- Status section  -->
 		<section id="status-section">
-			<div class="container section__wrapper status-section__wrapper status-section__cards">
-				<div class="status-card">
-					<div class="status-image status-image-1">
+			<div class="container position-relative z-2 section__wrapper ">
+				<div class="row justify-content-center">
+					<div
+						class="status-card col-sm-6 col-md-4 col-xl-3 my-3 d-flex flex-column align-items-center justify-content-center">
+						<div class="status-image status-image-1">
+						</div>
+						<p>Unique customer:</p>
+						<h3>3519+</h3>
 					</div>
-					<p>Unique customer:</p>
-					<h3>3519+</h3>
-				</div>
-				<div class="status-card">
-					<div class="status-image status-image-2">
+					<div
+						class="status-card col-sm-6 col-md-4 col-xl-3 my-3 d-flex flex-column align-items-center justify-content-center">
+						<div class="status-image status-image-2">
+						</div>
+						<p>Completed projects:</p>
+						<h3>3519+</h3>
 					</div>
-					<p>Completed projects:</p>
-					<h3>3519+</h3>
-				</div>
-				<div class="status-card">
-					<div class="status-image status-image-3">
+					<div
+						class="status-card col-sm-6 col-md-4 col-xl-3 my-3 d-flex flex-column align-items-center justify-content-center">
+						<div class="status-image status-image-3">
+						</div>
+						<p>Happy users:</p>
+						<h3>3519+</h3>
 					</div>
-					<p>Happy users:</p>
-					<h3>3519+</h3>
-				</div>
-				<div class="status-card">
-					<div class="status-image status-image-4">
-					
+					<div
+						class="status-card col-sm-6 col-md-4 col-xl-3 my-3 d-flex flex-column align-items-center justify-content-center">
+						<div class="status-image status-image-4">
+
+						</div>
+						<p>Happy users:</p>
+						<h3>3519+</h3>
 					</div>
-					<p>Happy users:</p>
-					<h3>3519+</h3>
 				</div>
 			</div>
 		</section>
 
 		<!-- Pricing section  -->
 		<section id="pricing-section">
-			<div class="container section__wrapper pricing-section__wrapper">
+			<div class="container d-flex flex-column align-self-center gap-5  section__wrapper">
 				<h2 class="pricing-section__title section__title">
 					Flexible
 					<span>Pricing</span>
-					 Plans
+					Plans
 				</h2>
-				<p class="pricing-section__description description-color">
+				<p class="pricing-section__description fw-light description-color">
 					Dolor sit Mollitia harum ea ut eaque velit.
 				</p>
-				<div class="pricing-section__cards">
-					<div class="pricing-card">
-						<h2 class="pricing-card__title roboto-regular">Trial version</h2>
-						<p class="pricing-card__subtitle">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						</p>
-						<h6 class="pricing-card__price">
-							<span>free</span>
-						</h6>
-						<ul class="pricing-card__features">
-							<li>500gb drive space</li>
-							<li>Unlimited messages</li>
-							<li class="not-eligible-feature">Free Email address</li>
-							<li class="not-eligible-feature">Friendly support</li>
-						</ul>
+				<div class="row">
+					<div class=" col-md-6 col-lg-4 my-3 ">
+						<div
+							class="d-flex flex-column align-content-center justify-content-center gap-2 text-center rounded-1 bg-white pricing-card">
+							<h2 class="pricing-card__title">Trial version</h2>
+							<p class="pricing-card__subtitle">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+							<h6 class="pricing-card__price">
+								<span>free</span>
+							</h6>
+							<ul class="d-flex flex-column gap-2 pricing-card__features">
+								<li>500gb drive space</li>
+								<li>Unlimited messages</li>
+								<li class="not-eligible-feature">Free Email address</li>
+								<li class="not-eligible-feature">Friendly support</li>
+							</ul>
 
-						<button class="btn btn-black" type="button" aria-label="Trial version download button">
-							download
-						</button>
+							<button class="mx-auto btn btn-black" type="button"
+								aria-label="Trial version download button">
+								download
+							</button>
+						</div>
 					</div>
-					<div class="pricing-card">
-						<h2 class="pricing-card__title roboto-regular">Regular</h2>
-						<p class="pricing-card__subtitle">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						</p>
-						<h5 class="pricing-card__price">$ <span>19</span>/Month</h5>
-						<ul class="pricing-card__features">
-							<li>500gb drive space</li>
-							<li>Unlimited messages</li>
-							<li>Free Email address</li>
-							<li class="not-eligible-feature">Friendly support</li>
-						</ul>
+					<div class=" col-md-6 col-lg-4 my-3">
+						<div
+							class="d-flex flex-column align-content-center justify-content-center gap-2 text-center rounded-1 bg-white pricing-card">
+							<h2 class="pricing-card__title">Regular</h2>
+							<p class="pricing-card__subtitle">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+							<h5 class="pricing-card__price">$ <span>19</span>/Month</h5>
+							<ul class="d-flex flex-column gap-2 pricing-card__features">
+								<li>500gb drive space</li>
+								<li>Unlimited messages</li>
+								<li>Free Email address</li>
+								<li class="not-eligible-feature">Friendly support</li>
+							</ul>
 
-						<a href="#" target="_blank" class="btn btn-black btn--active"
-							aria-label="Regular version purchase button">
-							purchase
-						</a>
+							<a href="#" target="_blank" class="mx-auto btn btn-black btn--active"
+								aria-label="Regular version purchase button">
+								purchase
+							</a>
+						</div>
 					</div>
-					<div class="pricing-card">
-						<h2 class="pricing-card__title roboto-regular">Extended</h2>
-						<p class="pricing-card__subtitle">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-						</p>
-						<h5 class="pricing-card__price">$ <span>29</span>/Month</h5>
-						<ul class="pricing-card__features">
-							<li>500gb drive space</li>
-							<li>Unlimited messages</li>
-							<li>Free Email address</li>
-							<li>Friendly support</li>
-						</ul>
+					<div class=" col-md-6 col-lg-4 my-3 ">
+						<div
+							class="d-flex flex-column align-content-center justify-content-center gap-2 text-center rounded-1 bg-white pricing-card">
+							<h2 class="pricing-card__title">Extended</h2>
+							<p class="pricing-card__subtitle">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</p>
+							<h5 class="pricing-card__price">$ <span>29</span>/Month</h5>
+							<ul class="d-flex flex-column gap-2 pricing-card__features">
+								<li>500gb drive space</li>
+								<li>Unlimited messages</li>
+								<li>Free Email address</li>
+								<li>Friendly support</li>
+							</ul>
 
-						<a href="#" target="_blank" class="btn btn-black" aria-label="Extended version purchase button">
-							purchase
-						</a>
+							<a href="#" target="_blank" class="mx-auto btn btn-black"
+								aria-label="Extended version purchase button">
+								purchase
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -352,32 +402,35 @@
 
 		<!-- Testimonial section  -->
 		<section id="testimonial-section">
-			<div class="container section__wrapper testimonial-section__wrapper">
-				<div class="testimonial-slider__wrapper">
-					<div class="testimonial-section__header">
-						<h2 class="testimonial-section__title">
+			<div
+				class="container section__wrapper d-flex flex-column gap-3 position-relative z-2 text-center flex-column">
+				<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
+					<div class="testimonial-section__header text-start ">
+						<h2 class="testimonial-section__title mb-4">
 							Testimonials<span> About Us</span>
 						</h2>
 						<p class="testimonial-section__description">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati!
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati!
 						</p>
 					</div>
-					<div class="slider">
-						<button class="slider-larrow" type="button" aria-label="testimonial previous button" title="previous-testimonial">
+					<div class="d-flex slider">
+						<button class="slider-larrow border-0 p-4" type="button"
+							aria-label="testimonial previous button" title="previous-testimonial">
 							<img src="./images/icons/larrow.png" alt="left-arrow" loading="lazy" width="10"
 								height="10" />
 						</button>
-						<button class="slider-rarrow" type="button" aria-label="testimonial next button" title="next-testimonial">
+						<button class="slider-rarrow border-0 p-4" type="button" aria-label="testimonial next button"
+							title="next-testimonial">
 							<img src="./images/icons/rarrow.png" alt="left-arrow" loading="lazy" width="10"
 								height="10" />
 						</button>
 					</div>
 				</div>
-				<div class="testimonial-cards">
-					<div class="testimonial-card">
-						<img src="./images/t-1.jpeg" alt="Testimonial people image" loading="lazy" width="120" height="120"
-							class="testimonial-card__image" />
-						<h4 class="testimonial-card__name roboto-semibold">
+				<div class="row text-center">
+					<div class="col-md-6 gap-2 my-3 d-flex flex-column align-items-center">
+						<img src="./images/t-1.jpeg" alt="Testimonial people image" loading="lazy" width="120"
+							height="120" class="rounded-circle" />
+						<h4 class="testimonial-card__name">
 							Robert Newmen
 						</h4>
 						<p class="testimonial-card__title">Microsoft Corporation</p>
@@ -387,10 +440,10 @@
 							sapiente. Modi facilis omnis, reprehenderit, velit numquam
 						</p>
 					</div>
-					<div class="testimonial-card">
-						<img src="./images/t-2.jpeg" alt="Testimonial people image" loading="lazy" width="120" height="120"
-							class="testimonial-card__image" />
-						<h4 class="testimonial-card__name roboto-semibold">
+					<div class="col-md-6 gap-2 my-3 d-flex flex-column align-items-center">
+						<img src="./images/t-2.jpeg" alt="Testimonial people image" loading="lazy" width="120"
+							height="120" class="rounded-circle" />
+						<h4 class="testimonial-card__name">
 							Robert Newmen
 						</h4>
 						<p class="testimonial-card__title">Space X</p>
@@ -406,83 +459,90 @@
 
 		<!-- Blog section  -->
 		<section id="blog-section">
-			<div class="container section__wrapper blog-section__wrapper">
+			<div class="container section__wrapper d-flex gap-4 position-relative z-2 flex-column">
 				<h2 class="section__title blog-section__title">
-					Latest<span> Blog</span> 
-					 Posts
+					Latest<span> Blog</span>
+					Posts
 				</h2>
-				<p class="blog-section__description">
+				<p class="blog-section__description mb-4">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
 					nisi.
 				</p>
 
-				<div class="blog-section__cards">
-					<div class="blog-card">
-						<img src="./images/img-2.jpg" alt="blog-image" width="370" height="250" loading="lazy" />
-						<div class="blog-card__content">
-							<h2 class="blog-card__title roboto-semibold">
-								Lorem ipsum dolor sit amet, consectetur adipisicing.
-							</h2>
-							<p class="blog-card__description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Possimus nesciunt laudantium suscipit quibusdam ullam laborum
-								aliquid, vero esse qui animi repellendus fugit dolorem
-								pariatur eius ipsum dolore. Suscipit consectetur aut culpa
-								provident illo reiciendis dolorum natus alias voluptate
-								officia, rem velit a! Fugiat totam odit repellendus modi sit.
-								Deserunt, necessitatibus.
-							</p>
+				<div class="row g-4">
+					<div class=" col-md-6 col-lg-4">
+						<div class="rounded-2 overflow-hidden blog-card">
+							<img src="./images/img-2.jpg" alt="blog-image" width="370" height="250" loading="lazy" />
+							<div class="d-flex flex-column gap-3 blog-card__content">
+								<h2 class="blog-card__title">
+									Lorem ipsum dolor sit amet, consectetur adipisicing.
+								</h2>
+								<p class="blog-card__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Possimus nesciunt laudantium suscipit quibusdam ullam laborum
+									aliquid, vero esse qui animi repellendus fugit dolorem
+									pariatur eius ipsum dolore. Suscipit consectetur aut culpa
+									provident illo reiciendis dolorum natus alias voluptate
+									officia, rem velit a! Fugiat totam odit repellendus modi sit.
+									Deserunt, necessitatibus.
+								</p>
 
-							<a href="#" target="_blank" class="blog-card__btn btn btn-black"
-								aria-label="Blog read more button">
-								read more
-							</a>
+								<a href="#" target="_blank" class="blog-card__btn btn btn-black"
+									aria-label="Blog read more button">
+									read more
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="blog-card">
-						<img src="./images/img-2.jpg" alt="blog-image" width="370" height="250" loading="lazy" />
-						<div class="blog-card__content">
-							<h2 class="blog-card__title roboto-semibold">
-								Lorem ipsum dolor sit amet, consectetur adipisicing.
-							</h2>
-							<p class="blog-card__description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Possimus nesciunt laudantium suscipit quibusdam ullam laborum
-								aliquid, vero esse qui animi repellendus fugit dolorem
-								pariatur eius ipsum dolore. Suscipit consectetur aut culpa
-								provident illo reiciendis dolorum natus alias voluptate
-								officia, rem velit a! Fugiat totam odit repellendus modi sit.
-								Deserunt, necessitatibus.
-							</p>
+					<div class=" col-md-6 col-lg-4">
+						<div class="rounded-2 overflow-hidden blog-card">
+							<img src="./images/img-2.jpg" alt="blog-image" width="370" height="250" loading="lazy" />
+							<div class="d-flex flex-column gap-3 blog-card__content">
+								<h2 class="blog-card__title">
+									Lorem ipsum dolor sit amet, consectetur adipisicing.
+								</h2>
+								<p class="blog-card__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Possimus nesciunt laudantium suscipit quibusdam ullam laborum
+									aliquid, vero esse qui animi repellendus fugit dolorem
+									pariatur eius ipsum dolore. Suscipit consectetur aut culpa
+									provident illo reiciendis dolorum natus alias voluptate
+									officia, rem velit a! Fugiat totam odit repellendus modi sit.
+									Deserunt, necessitatibus.
+								</p>
 
-							<a href="#" target="_blank" class="blog-card__btn btn btn-black btn--active"
-								aria-label="Blog read more button">
-								read more
-							</a>
+								<a href="#" target="_blank" class="blog-card__btn btn btn-black btn--active"
+									aria-label="Blog read more button">
+									read more
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="blog-card">
-						<img src="./images/img-2.jpg" alt="blog-image" width="370" height="250" loading="lazy" />
-						<div class="blog-card__content">
-							<h2 class="blog-card__title roboto-semibold">
-								Lorem ipsum dolor sit amet, consectetur adipisicing.
-							</h2>
-							<p class="blog-card__description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Possimus nesciunt laudantium suscipit quibusdam ullam laborum
-								aliquid, vero esse qui animi repellendus fugit dolorem
-								pariatur eius ipsum dolore. Suscipit consectetur aut culpa
-								provident illo reiciendis dolorum natus alias voluptate
-								officia, rem velit a! Fugiat totam odit repellendus modi sit.
-								Deserunt, necessitatibus.
-							</p>
+					<div class="col-md-6 col-lg-4">
+						<div class="rounded-2 overflow-hidden blog-card">
+							<img src="./images/img-2.jpg" alt="blog-image" width="370" height="250" loading="lazy" />
+							<div class="d-flex flex-column gap-3 blog-card__content">
+								<h2 class="blog-card__title">
+									Lorem ipsum dolor sit amet, consectetur adipisicing.
+								</h2>
+								<p class="blog-card__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Possimus nesciunt laudantium suscipit quibusdam ullam laborum
+									aliquid, vero esse qui animi repellendus fugit dolorem
+									pariatur eius ipsum dolore. Suscipit consectetur aut culpa
+									provident illo reiciendis dolorum natus alias voluptate
+									officia, rem velit a! Fugiat totam odit repellendus modi sit.
+									Deserunt, necessitatibus.
+								</p>
 
-							<a href="#" target="_blank" class="blog-card__btn btn btn-black"
-								aria-label="Blog read more button">
-								read more
-							</a>
+								<a href="#" target="_blank" class="blog-card__btn btn btn-black"
+									aria-label="Blog read more button">
+									read more
+								</a>
+							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
@@ -490,23 +550,23 @@
 	<!-- Footer  -->
 	<footer class="footer">
 		<div class="container">
-			<a href="#" class="footer-logo"><img src="./images/logo-footer.jpg" alt="Corey Logo" title="Corey Logo" loading="lazy" width="166"
-				height="70" /></a>
+			<a href="#" class="footer-logo d-inline-block"><img src="./images/logo-footer.jpg" alt="Corey Logo"
+					title="Corey Logo" loading="lazy" width="166" height="70" /></a>
 
-			<div class="footer-main-content">
-				<div class="footer-navigation-list">
-					<h2 class="footer-navigation-heading">Company</h2>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 my-4 footer-navigation-list">
+					<h2 class="mb-4 footer-navigation-heading fw-bold">Company</h2>
 					<ul>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="#about-section" title="About our company" aria-label="About our company">About</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="/support" title="Customer support" aria-label="Customer support">Support</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="/press" title="Press and media" aria-label="Press and media">Press</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="/privacy-policy" title="Legal and privacy policy"
 								aria-label="Legal and privacy policy">
 								Legal & Privacy
@@ -515,62 +575,65 @@
 					</ul>
 				</div>
 
-				<div class="footer-navigation-list">
-					<h2 class="footer-navigation-heading">Quick Links</h2>
+				<div class="col-lg-3 col-md-4 col-sm-6 my-4 footer-navigation-list">
+					<h2 class="mb-4 footer-navigation-heading fw-bold">Quick Links</h2>
 					<ul>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="/news" title="Latest news" aria-label="Latest news">News</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="/contact" title="Contact us" aria-label="Contact us">Contact Us</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="/faq" title="Frequently asked questions"
 								aria-label="Frequently asked questions">FAQ</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="footer-navigation-list">
-					<h2 class="footer-navigation-heading">Social</h2>
+				<div class="col-lg-3 col-md-4 col-sm-6 my-4 footer-navigation-list">
+					<h2 class="mb-4 footer-navigation-heading fw-bold">Social</h2>
 					<ul>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
 								title="Visit our Facebook page" aria-label="Visit our Facebook page">Facebook</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="https://plus.google.com" target="_blank" rel="noopener noreferrer"
 								title="Visit our Google Plus page" aria-label="Visit our Google Plus page">Google+</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
 								title="Visit our Twitter page" aria-label="Visit our Twitter page">Twitter</a>
 						</li>
-						<li class="footer-navigation-item">
+						<li class="footer-navigation-item mb-2">
 							<a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
 								title="Visit our Instagram page" aria-label="Visit our Instagram page">Instagram</a>
 						</li>
 					</ul>
 				</div>
 
-				<div class="content-subscriber">
-					<h2 class="footer-navigation-heading">Subscribe newsletter</h2>
-					<form action="" method="post" class="footer-form">
+				<div class="col-lg-3 col-md-4 col-sm-6 my-4 content-subscriber">
+					<h2 class="mb-4 footer-navigation-heading fw-bold">Subscribe newsletter</h2>
+					<form action="" method="post" class="footer-form d-flex gap-0 overflow-hidden">
 						<input placeholder="email" type="email" id="footer-email" name="email" required
-							aria-label="Email address" />
-						<button type="submit" aria-label="Subscribe to newsletter">
-							<img src="./images/icons/i-message.svg" alt="message-icon" width="15" height="15"
+							aria-label="Email address" class="p-3 border-0" />
+						<button type="submit" aria-label="Subscribe to newsletter" class="p-3">
+							<img src="./images/icons/i-message.svg" alt="message-icon" width="20" height="20"
 								loading="lazy" />
 						</button>
 					</form>
 				</div>
 			</div>
-			<p class="footer-copyright roboto-thin">
+			<p class="footer-copyright small text-center py-3 border-top border-secondary text-uppercase mb-0">
 				COPYRIGHT © ALL RIGHTS RESERVED LATE 2018 | DESIGN AND DEVELOPMENT BY
 				MILLERDIGITALDESIGN
 			</p>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 </body>
 
