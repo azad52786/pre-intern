@@ -334,7 +334,7 @@ header {
 .portfolio-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(9, 240px);
+	grid-template-rows: repeat(9, 300px);
 	gap: 20px;
 }
 
@@ -412,7 +412,7 @@ header {
 @media (min-width: 576px) {
 	.portfolio-grid {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(5, 240px);
+		grid-template-rows: repeat(5, 300px);
 	}
 
 	.portfolio-grid-item-1 {
@@ -428,7 +428,7 @@ header {
 @media (min-width: 768px) {
 	.portfolio-grid {
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 240px);
+		grid-template-rows: repeat(3, 300px);
 	}
 
 	.portfolio-grid-item-1 {
@@ -673,38 +673,10 @@ header {
 }
 
 /* Small devices (≥576px) */
-@media (min-width: 576px) {
-	.portfolio-grid {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(5, 240px);
-	}
-
-	.portfolio-grid-item-1 {
-		grid-row: 1/3;
-	}
-
-	.portfolio-grid-item-5 {
-		grid-row: 3/5;
-		grid-column: 2/3;
-	}
-}
+@media (min-width: 576px) {}
 
 /* Medium devices (≥768px) */
 @media (min-width: 768px) {
-
-	.portfolio-grid {
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 240px);
-	}
-
-	.portfolio-grid-item-1 {
-		grid-row: 1/3;
-	}
-
-	.portfolio-grid-item-5 {
-		grid-row: 2/4;
-		grid-column: 3/4;
-	}
 
 	.footer-navigation-list,
 	.content-subscriber {
