@@ -30,13 +30,18 @@ ul {
 a {
 	text-decoration: none;
 	display: inline-block;
-	width: fit-content;
-	height: fit-content;
 }
 
 header {
 	background-color: #fbfaff;
 	box-shadow: 0 0 10px #ddd;
+}
+
+.flex-col-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .navbar__right__wrapper {
@@ -51,7 +56,15 @@ header {
 	margin-left: 5px;
 }
 
+.navbar__right__wrapper li {
+	display: flex;
+}
+
 .navbar__link {
+	display: flex;
+	/* height: 100%; */
+	align-items: center;
+	padding-inline: 16px;
 	font-family: "Montserrat", sans-serif;
 	font-size: 12px;
 	color: #4f5362;
@@ -97,6 +110,9 @@ header {
 }
 
 .navbar__mobile__link {
+	display: flex;
+	align-items: center;
+	width: 100%;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.2rem;
 	color: #4f5362;
@@ -193,6 +209,9 @@ header {
 }
 
 .about-section__feature-item {
+	display: flex;
+	align-items: center;
+	gap: 14px;
 	color: #434953;
 	margin-bottom: 28px;
 }
@@ -230,6 +249,7 @@ header {
 .service-card,
 .status-card {
 	color: #cecdd6;
+	margin-block: 16px;
 }
 
 .service-image,
@@ -308,11 +328,9 @@ header {
 }
 
 .portfolio-list {
-	margin-bottom: 10px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 12px;
-	letter-spacing: 1.2;
 }
 
 .portfolio-list__item {
@@ -368,6 +386,10 @@ header {
 }
 
 .portfolio-content {
+	height: 100%;
+	gap: 16px;
+	position: relative;
+	opacity: 0;
 	color: #eeecf5;
 	cursor: pointer;
 }
@@ -478,6 +500,10 @@ header {
 }
 
 .pricing-card {
+	gap: 8px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 4px;
 	padding: 40px 20px;
 	box-shadow: 0 4px 12px #8f898926;
 }
@@ -512,6 +538,9 @@ header {
 }
 
 .pricing-card__features {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
 	font-size: 0.9rem;
 	line-height: 1.3rem;
 	color: #7d858ec8;
@@ -529,7 +558,7 @@ header {
 }
 
 .testimonial-section__title {
-	font-size: 3rem;
+	font-size: 4rem;
 	line-height: 1.2;
 	color: #dbdae0;
 }
@@ -562,7 +591,7 @@ header {
 .testimonial-section__description,
 .testimonial-card-description {
 	color: #9693a3;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	line-height: 1.25rem;
 }
 
@@ -608,6 +637,8 @@ header {
 }
 
 .blog-card {
+	border-radius: 8px;
+	overflow: hidden;
 	box-shadow: 0 4px 12px #00000026;
 }
 
@@ -638,6 +669,7 @@ header {
 }
 
 .footer-navigation-item {
+	margin-bottom: 10px;
 	letter-spacing: 2px;
 }
 
@@ -663,6 +695,11 @@ header {
 	border: 0;
 }
 
+.footer-navigation-list,
+.content-subscriber {
+	margin: 24px 0;
+}
+
 .footer-form button {
 	background-color: #f2b705;
 }
@@ -680,7 +717,7 @@ header {
 
 	.footer-navigation-list,
 	.content-subscriber {
-		margin: 70px 0 !important;
+		margin: 40px 0;
 	}
 }
 
@@ -706,7 +743,7 @@ header {
 
 	.footer-navigation-list,
 	.content-subscriber {
-		margin: 70px 0 !important;
+		margin: 70px 0;
 	}
 }
 
