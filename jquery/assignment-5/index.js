@@ -1,22 +1,23 @@
-$(document).ready(function () { 
-    // $('.pop-up').hide();
+$(document).ready(function () {
+    $('.pop-up').hide();
+
+    $('.footer').click(function () {
+        $('.pop-up').fadeIn("fast");
+    });
+
+    $('.pop-up img').click(function () {
+        $('.pop-up').fadeOut("fast");
+    })
+
+
     
     // $('.footer').click(function() {
-    //     $('.pop-up').show();
+    //     $('.pop-up').css('display', 'flex');
     // });
-    
+
     // $('.pop-up img').click(function () {  
-    //     $('.pop-up').hide();
+    //     $('.pop-up').css('display', 'none');
     // })
-    
-    
-    $('.footer').click(function() {
-        $('.pop-up').css('display', 'flex');
-    });
-    
-    $('.pop-up img').click(function () {  
-        $('.pop-up').css('display', 'none');
-    })
-    
-    
+
+
 })
