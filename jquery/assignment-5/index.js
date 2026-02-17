@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('.pop-up').fadeIn("fast");
     });
 
-    $('.pop-up img').click(function () {
+    $('.pop-up button').click(function () {
         $('.pop-up').fadeOut("fast");
     })
 

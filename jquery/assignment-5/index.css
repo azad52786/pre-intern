@@ -84,9 +84,22 @@ body {
     padding: 20px;
 }
 
-.pop-up img {
+
+
+.pop-up button {
     align-self: flex-end;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+}
+
+.pop-up button::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('x-button.png') center / cover no-repeat;
+    color: white;
 }
 
 .pop-up h2 {
