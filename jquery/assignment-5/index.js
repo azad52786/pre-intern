@@ -10,7 +10,7 @@ $(document).ready(function () {
     })
 
 
-    
+
     // $('.footer').click(function() {
     //     $('.pop-up').css('display', 'flex');
     // });
